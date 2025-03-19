@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upload Resume</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <h1>Upload Resume</h1>
+    <form action="/" method="post" enctype="multipart/form-data">
+        <label for="client">Client:</label>
+        <input type="text" id="client" name="client" required><br><br>
+        
+        <label for="candidate_name">Candidate Name:</label>
+        <input type="text" id="candidate_name" name="candidate_name" required><br><br>
+        
+        <label for="position_applied">Position Applied:</label>
+        <input type="text" id="position_applied" name="position_applied" required><br><br>
+        
+        <label for="age">Age:</label>
+        <input type="text" id="age" name="age" required><br><br>
+        
+        <label for="current_salary">Current Salary:</label>
+        <input type="text" id="current_salary" name="current_salary" required><br><br>
+        
+        <label for="expected_salary">Expected Salary:</label>
+        <input type="text" id="expected_salary" name="expected_salary" required><br><br>
+        
+        <label for="notice_period">Notice Period:</label>
+        <input type="text" id="notice_period" name="notice_period" required><br><br>
+        
+        <label for="reason_leaving">Reason for Leaving:</label>
+        <input type="text" id="reason_leaving" name="reason_leaving" required><br><br>
+        
+        <label for="executive_summary">Executive Summary:</label>
+        <textarea id="executive_summary" name="executive_summary" required></textarea><br><br>
+        
+        <label for="resume">Upload Resume (PDF):</label>
+        <input type="file" id="resume" name="resume" accept="application/pdf" required><br><br>
+        
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>

@@ -1,0 +1,72 @@
+/* Apply a gradient background */
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #6a11cb, #2575fc);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Use min-height instead of height for better responsiveness */
+    margin: 0;
+    padding: 20px; /* Add padding to prevent content from touching the edges on smaller screens */
+    box-sizing: border-box; /* Ensure padding is included in the height calculation */
+}
+
+/* Form container */
+form {
+    background: rgba(255, 255, 255, 0.2);
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 400px; /* Use max-width instead of fixed width for responsiveness */
+    width: 100%; /* Ensure it takes full width on smaller screens */
+    backdrop-filter: blur(10px);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Styling for labels */
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: white;
+}
+
+/* Input fields */
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    box-sizing: border-box; /* Ensure padding is included in the width calculation */
+    background: rgba(255, 255, 255, 0.8); /* Add a light background to inputs for better readability */
+}
+
+textarea {
+    resize: vertical; /* Allow vertical resizing of textarea */
+    min-height: 100px; /* Set a minimum height for textarea */
+}
+
+/* Button Styling */
+button {
+    width: 100%;
+    padding: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    background: #ff9800;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease; /* Specify the property to transition */
+}
+
+button:hover {
+    background: #e68900;
+}
+
+/* Add focus styles for better accessibility */
+input:focus, textarea:focus, button:focus {
+    outline: 2px solid #2575fc; /* Add a focus outline for better accessibility */
+    outline-offset: 2px;
+}
